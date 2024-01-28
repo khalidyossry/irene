@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--HEAD-->
+  <head>
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/evo-calendar.min.css" />
+    <link rel="stylesheet" href="css/evo-calendar.midnight-blue.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/evo-calendar@1.1.2/evo-calendar/css/evo-calendar.min.css"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css"
+      integrity="sha512-CIYsJUa3pr1eoXlZFroEI0mq0UIMUqNouNinjpCkSWo3Bx5NRlQ0OuC6DtEB/bDqUWnzXc1gs2X/g52l36N5iw=="
+      crossorigin="anonymous"
+    />
+    <title>Irene</title>
+  </head>
+  <!--END HEAD-->
+
+  <!--BODY-->
+  <body>
+    <!--First Section-->
+    <div class="hero">
+      <div id="calendar"></div>
+      <!--NavBAR-->
+      <div class="navbar">
+        <div class="logo">
+          <img src="img/logo.png" alt="" />
+        </div>
+        <div class="links" id="nlinks">
+          <i class="fa fa-close" onclick="closeMenu()"></i>
+          <ul>
+            <a href="#"><li>ABOUT</li></a>
+            <a href="#pl"><li>PLAYLIST</li></a>
+            <a href="#"><li>GALLERY</li></a>
+          </ul>
+          <button type="button" class="butn">CODE</button>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </div>
+      <!--END NAVBAR-->
+      <!--START TEXT SECTION-->
+      <div class="title">
+        <h1>
+          Hello My Cupcake!<br /><span
+            >This website is a small world of our trip...have fun.</span
+          >
+        </h1>
+        <p>
+          You can discover many things here in this small world that specially
+          made for you,<br />
+          I still working on it but for now you can enjoy listing to music or
+          see my notes for you.<br />
+        </p>
+        <button class="butn"><a href="#pl">Explore!</a></button>
+        <h4>About Us</h4>
+        <p>
+          Our First Conversation : 9/2023<br />
+          Fav Bands : I-Stray Kids E-Lege-Cy<br />
+          Fav Drink : I-MilkTea E-Tea
+        </p>
+      </div>
+      <!--END TEXT SECTION-->
+      <!--START PROGRAM BAR SECTION-->
+      <div class="vbar" id="vbar">
+        <div class="searchicon">
+          <i class="fa fa-th-list" onclick="uncolor()"></i>
+          <i class="fa fa-coffee" onclick="openc()"></i>
+          <i class="fa fa-paint-brush" onclick="color()"></i>
+        </div>
+        <div class="apps" id="apps">
+          <i class="fa fa-calendar" onclick="opencale()" id="ww"></i>
+          <!-- <i class="fa fa-sticky-note" id="we"></i> -->
+          <!-- <a href="games.html"><i class="fa fa-gamepad" id="wr"></i></a> -->
+          <a href="bb.html"><i class="fa fa-question" id="wt"></i></a>
+        </div>
+      </div>
+      <!--END PROGRAM BAR SECTION-->
+      <!--START PLAYLIST SECTION-->
+      <div id="pl" class="musicplayer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h3>For Irene</h3>
+            </div>
+            <!--SONG-->
+            <div class="col-md-3">
+              <a href="javascript:void();" class="albumposter" data-switch="0">
+                <img src="img/1.jpg" alt="" />
+              </a>
+              <h4>Here Always</h4>
+              <p>Stray Kıds</p>
+            </div>
+            <!--END SONG-->
+            <div class="col-md-3">
+              <a href="javascript:void();" class="albumposter" data-switch="1">
+                <img src="img/2.jpg" alt="" />
+              </a>
+              <h4>Airplane</h4>
+              <p>Stray Kıds</p>
+            </div>
+            <div class="col-md-3">
+              <a href="javascript:void();" class="albumposter" data-switch="2">
+                <img src="img/3.jpg" alt="" />
+              </a>
+              <h4>Close To You</h4>
+              <p>Stray Kıds</p>
+            </div>
+            <div class="col-md-3">
+              <a href="javascript:void();" class="albumposter" data-switch="3">
+                <img src="img/4.png" alt="" />
+              </a>
+              <h4>Sorry I Love You</h4>
+              <p>Stray Kıds</p>
+            </div>
+            <div class="col-md-3">
+              <a href="javascript:void();" class="albumposter" data-switch="4">
+                <img src="img/5.jpg" alt="" />
+              </a>
+              <h4>Hug Me</h4>
+              <p>Stray Kıds</p>
+            </div>
+            <div class="col-md-3">
+              <a href="javascript:void();" class="albumposter" data-switch="5">
+                <img src="img/6.jpg" alt="" />
+              </a>
+              <h4>Ya Salam</h4>
+              <p>Marwan Moussa</p>
+            </div>
+            <div class="col-md-3">
+              <a href="javascript:void();" class="albumposter" data-switch="6">
+                <img src="img/7.jpg" alt="" />
+              </a>
+              <h4>Suzume</h4>
+              <p>Suzume no Tojimari</p>
+            </div>
+            <div class="col-md-3">
+              <a href="javascript:void();" class="albumposter" data-switch="7">
+                <img src="img/8.png" alt="" />
+              </a>
+              <h4>Ya Helwa Belel</h4>
+              <p>Dizzytooskinny</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <h3>CUPCAKE</h3>
+            </div>
+            <div class="col-md-2">
+              <a href="javascript:void();" class="albumposter" data-switch="8">
+                <img src="img/smi.jpg" alt="" />
+              </a>
+              <h4>Smithereens</h4>
+              <p>Twenty One Pilots - 2018</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="aplayer"></div>
+    <!--END PLAYLIST SECTION-->
+    <!--START CALENDER SECTION-->
+    <div class="cale" id="calender">
+      <span class="closebtn" onclick="closecale()">&times;</span>
+      <div id="calendaro"></div>
+    </div>
+    <!--END CLAENDAR SECTION-->
+    <!--START COFFEE&MESSAGES SECTION-->
+    <div class="coffee_body" id="coffee">
+      <span class="closebtnc" onclick="closec()">&times;</span>
+      <i class="fa fa-play-circle-o" id="play" onclick="hidecup()"></i>
+      <i class="fa fa-pause-circle-o" id="pause" onclick="showcup()"></i>
+      <div class="message">
+        <h1>Irene Love Coffee</h1>
+        <p>
+          It's a bit disappointing, I was hoping she would love tea.<br />
+          But anyway, whatever Irene loves, I will also love.
+          <br />
+          Hello Irene, I have left some messages for you that I wrote on a
+          winter night. I hope you like them.
+        </p>
+      </div>
+      <div class="coffee_container">
+        <!--
+                <div class="plate"></div> -->
+        <div class="cup" id="cup">
+          <div class="top">
+            <div class="vapour">
+              <span style="--i: 1"></span>
+              <span style="--i: 3"></span>
+              <span style="--i: 16"></span>
+              <span style="--i: 5"></span>
+              <span style="--i: 13"></span>
+              <span style="--i: 20"></span>
+              <span style="--i: 6"></span>
+              <span style="--i: 7"></span>
+              <span style="--i: 10"></span>
+              <span style="--i: 8"></span>
+              <span style="--i: 17"></span>
+              <span style="--i: 11"></span>
+              <span style="--i: 12"></span>
+              <span style="--i: 14"></span>
+              <span style="--i: 2"></span>
+              <span style="--i: 9"></span>
+              <span style="--i: 15"></span>
+              <span style="--i: 4"></span>
+              <span style="--i: 19"></span>
+            </div>
+            <div class="handle"></div>
+            <div class="cir">
+              <div class="coffee"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="message_body" id="message">
+        <p class="textframe">
+          You are the light in my life, guiding me through every dark moment
+        </p>
+        <p class="textframe">
+          And my love for you grows stronger with each passing day
+        </p>
+        <p class="textframe">I can't imagine my life without you by my side</p>
+        <p class="textframe">You're enough and you'll always be</p>
+        <p class="textframe">I cherish every moment we spend together</p>
+        <p class="textframe">
+          And in all the languages of the world, I will say it:
+        </p>
+        <p class="textframe">
+          Te amo, Irene. Je t'aime, Irene. Ich liebe dich, Irene. Ti amo, Irene.
+          Я люблю тебя, Ирен. 我爱你，艾琳. 愛してるよ、アイリーン. मैं तुमसे
+          प्यार करता हूँ, आईरीन. 사랑해요, 아이린.
+        </p>
+        <p class="textframe">
+          I love You Irene | انا بحبك ايرين | Mahal Kita Irene
+        </p>
+      </div>
+    </div>
+    <!--END COFFE-->
+    <script type="text/javascript" src="js/color.js"></script>
+    <script src="js/closecm.js"></script>
+    <script type="text/javascript" src="js/closecale.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/evo-calendar@1.1.2/evo-calendar/js/evo-calendar.min.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/evo-calendar.js"></script>-->
+    <script src="js/evo-calendar.min.js"></script>
+    <script>
+      $("#calendar").evoCalendar();
+      myEvents = [
+        {
+          id: "required-id-1",
+          name: "New Year",
+          date: "Sat Jan 16 2020 00:00:00 GMT-0800 (Pacific Standard Time)",
+          type: "holiday",
+          everyYear: true,
+        },
+      ];
+      $("#evoCalendar").evoCalendar({
+        calendarEvents: myEvents,
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $("calendar").evoCalendar({});
+      });
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      var show = document.getElementById("nlinks");
+      function showMenu() {
+        show.style.right = "0";
+      }
+      function closeMenu() {
+        show.style.right = "-200px";
+      }
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"
+      integrity="sha512-RWosNnDNw8FxHibJqdFRySIswOUgYhFxnmYO3fp+BgCU7gfo4z0oS7mYFBvaa8qu+axY39BmQOrhW3Tp70XbaQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(".albumposter").on("click", function (e) {
+        var dataSwitchId = $(this).attr("data-switch");
+
+        ap.list.switch(dataSwitchId);
+        ap.play();
+        $("#aplayer").addClass("showPlayer");
+      });
+      const ap = new APlayer({
+        container: document.getElementById("aplayer"),
+        listFolded: true,
+        audio: [
+          {
+            name: "Here Always",
+            artist: "Stray Kids",
+            url: "audio/Here Always.mp3",
+            cover: "img/1.jpg",
+          },
+          {
+            name: "Airplane",
+            artist: "Stray Kids",
+            url: "audio/AIRPLANE.mp3",
+            cover: "img/2.jpg",
+          },
+          {
+            name: "Close To You",
+            artist: "Stray Kids",
+            url: "audio/Close to You.mp3",
+            cover: "img/3.jpg",
+          },
+          {
+            name: "Sorry I Love You",
+            artist: "Stray Kids",
+            url: "audio/Sorry i love you.mp3",
+            cover: "img/4.png",
+          },
+          {
+            name: "Hug Me",
+            artist: "Stray Kids",
+            url: "audio/Hug Me.mp3",
+            cover: "img/5.jpg",
+          },
+          {
+            name: "Ya Salam",
+            artist: "Marwan Moussa",
+            url: "audio/Ya Salam.mp3",
+            cover: "img/6.jpg",
+          },
+          {
+            name: "Suzume",
+            artist: "Suzume no Tojimari",
+            url: "audio/Suzume.mp3",
+            cover: "img/7.jpg",
+          },
+          {
+            name: "Ya Helwa Belel",
+            artist: "Dizzytooskinny",
+            url: "audio/Ya Helwa Blel.mp3",
+            cover: "img/8.png",
+          },
+          {
+            name: 'Smithereens "For Genny"',
+            artist: "Twenty One Pilots",
+            url: "audio/Smithereens.mp3",
+            cover: "img/trench2.jpg",
+          },
+        ],
+      });
+    </script>
+  </body>
+</html>
